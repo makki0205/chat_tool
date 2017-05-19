@@ -2,7 +2,7 @@ package main
 
 import (
 	"os"
-	"./Chat"
+	"github.com/makki0205/chat_tool/Chat"
 	"fmt"
 )
 
