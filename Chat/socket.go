@@ -27,3 +27,6 @@ func (this *Socket)Read() string{
 	return string(buf[:n])
 }
 
+func (this *Socket)Close(){
+	this.conn.Close()
+}

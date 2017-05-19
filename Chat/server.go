@@ -19,7 +19,6 @@ func ServerInit(){
 	}
 	sock := SocketManager(conn)
 	go ReadHandle(sock)
-
 	SendHandle(sock)
 }
 
