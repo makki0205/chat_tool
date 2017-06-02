@@ -2,7 +2,6 @@ package Chat
 
 import (
 	"net"
-	"fmt"
 )
 
 type Socket struct {
@@ -22,7 +21,7 @@ func (this *Socket)Read() string{
 	buf := make([]byte, 1024)
 	n, err := this.conn.Read(buf)
 	if err != nil {
-		fmt.Printf("Read error: %s\n", err)
+		return ""
 	}
 	return string(buf[:n])
 }

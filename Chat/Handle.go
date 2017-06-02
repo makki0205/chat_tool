@@ -29,6 +29,5 @@ func SendHandle(socket *Socket){
 			break
 		}
 		socket.Send(buf)
-		fmt.Println("[送信]: " + buf)
 	}
 }
