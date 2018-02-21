@@ -2,8 +2,8 @@ package main
 
 import (
 	"os"
-	"github.com/makki0205/chat_tool/Chat"
 	"fmt"
+	"github.com/makki0205/chat_tool/chat"
 )
 
 
@@ -13,8 +13,8 @@ func main() {
 		os.Exit(1)
 	}
 	if os.Args[1] == "-l"{
-		Chat.ServerInit()
+		chat.ServerInit()
 	}else{
-		Chat.ClientInit(os.Args[1])
+		chat.ClientInit(os.Args[1])
 	}
 }
